@@ -1,6 +1,6 @@
 // Define the function to display astronauts
 
-function displayAstronauts(data) {
+function displayAstronauts(data) { // Function to display astronauts data // Hint: Create a function called displayAstronauts(data)
   const astronautList = document.getElementById("astronaut-list");
 
   data.people.forEach((person) => {
@@ -20,7 +20,9 @@ fetch("http://api.open-notify.org/astros.json")
   .catch(function (error) {
     console.error("Error fetching data:", error);
   });
-// Function to display astronauts data
+
+
+  // Function to display astronauts data
 // Hint: Create a function called displayAstronauts(data)
 // Hint: Select the <ul> element with the id "astronaut-list"
 // Hint: Loop through the data.people array and create <li> elements for each astronaut's name
